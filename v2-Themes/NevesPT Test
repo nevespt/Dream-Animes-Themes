@@ -1,0 +1,47 @@
+ @import "../style.css";
+
+
+
+.cm-s-monokai.CodeMirror {height: 600px;border-radius: 6px;} /* altura da caixa de codigo */
+
+
+/* Player 3 */
+
+
+.jw-settings-menu { 
+	background-color: rgba(255,255,255,0.7) !important;  /* same as snackbar */
+    border: 2px solid #ccc !important;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.jw-settings-content-item {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.jw-settings-content-item:hover {
+    color: #fd5f00 !important;
+}
+
+.jw-settings-content-item:focus {
+    font-weight: 100; !important
+  	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.0),0 0 0px #fd5f00!important;
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.0),0 0 0px #fd5f00!important;
+}
+
+.jw-slider-time .jw-rail {
+  background-color: rgba(255,255,255,0.2);}
+
+.nextEp {
+    color: #fff !important;
+}
+
+.jw-settings-submenu::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 150, 150, 0.8) !important;
+    border: 0px solid #888 !important;
+    border-radius: 0px !important;
+}
+
+
+/* Fim Player 3 */
+                
