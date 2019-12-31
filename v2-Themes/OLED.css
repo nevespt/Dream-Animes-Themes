@@ -1,0 +1,154 @@
+/* Importa o estilo padrão do site */
+/* Recomendado pra evitar partes não estilizadas */
+@import "../style.css";
+/* substitui as variaveis do tema padrão do site */
+@set {
+  body-bgcolor: #000; /* cor de fundo do site */
+  body-color: #cfd2da; /* cor padrão dos textos */
+
+  nav-bg: #222; /* cor de fundo da Barra de Navegação */
+  inputs-bg: #434857; /* cor de fundo dos campos */
+
+  nav-color: #cfd5dc; /* cor dos links do menu */
+  nav-color-hover: #e5e7ea; /* cor dos links ao passar o mouse */
+
+  blue-bg: #434857; /* tudo que é clicável e tem o fundo azul no site */
+  green-bg: #434857; /* tudo que é clicável e tem o fundo verde no site */
+  purple-bg: #434857; /* tudo que é clicável e tem o fundo roxo no site */
+  red-bg: #e434857; /* tudo que é clicável e tem o fundo vermelho no site */
+  yellow-bg: #434857; /* tudo que é clicável e tem o fundo amarelo no site */
+  black-bg: #111; /* tudo que tem uma cor bem escura rodapé etc */
+  blacklight-bg: #222; /* tudo que tem a cor um pouquinho escura */
+  chill-bg: #22242b; /* tudo que tem uma cor nem tão escura EX campos de resposta */
+
+  blue-color: #1997c6; /* cor do texto do blue-bg */
+  green-color: #1bc98e; /* cor do texto do green-bg */
+  purple-color: #9256f3; /* cor do texto do purple-bg */
+  red-color: #e64759; /* cor do texto do red-bg */
+  yellow-color: #ffc107; /* cor do texto do yellow-bg */
+  black-color: #fff; /* cor do texto do black-bg */
+  blacklight-color: #fff; /* cor do texto blacklight blue-bg */
+
+  vapor-color: rgba(255, 255, 255, 0.8); /* fundo dos botões seguir */
+
+  active-bg: #1997c6;
+  btn-active-bg: #087ba7; /* fundo dos botões ativados */
+
+  a-hover: #e1f2f9; /* cor do texto dos links ao passar o mouse */
+}
+
+/* Abaixo serão feitas algumas alterações no estilo padrão*/
+/* EXEMPLO - Altera a cor da linha que aparece abaixo dos "titulos" */
+
+
+.hd {
+    color: #fd5f00;
+    background-color: rgba(0,0,0,.64);
+    bottom: 7px;
+  	right: 7px;
+  	top: inherit;
+  	left: inherit;
+    font-weight: bold;
+    border: none !important;
+}
+
+.hd b {
+    color: #fd5f00;}
+
+.hd.green {
+    color: #1BC98E !important;
+}
+
+.duration {
+  bottom: 28px;
+}
+ 
+
+
+
+
+/******************* BLUR ELEMENTS *******************/
+
+/* SnackBar */
+
+
+#snackbar,.floatingBot{
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid #333;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    color:#cfd2da;
+    text-align:center;
+    border-radius:2px;
+    padding:16px;
+    position:fixed;
+    z-index:10000000000;
+    right:3%;
+    bottom:30px}
+
+
+
+/* Recentemente Add */
+
+
+.relative:hover .detalhes {
+    visibility: visible;
+    -webkit-backface-visibility: visible;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    /* backface-visibility: visible; */
+    /* -webkit-animation-name: fadeIn; */
+    animation-name: fadeIn;
+}
+
+.detalhes {
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+	-webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    visibility: visible!important;
+
+}
+
+
+
+
+
+/* barra lateral */
+
+.col-4 {
+  width: 10%;
+  transition: 0.5s;
+  font-size: 10px;
+  opacity: 0.5;
+  background-color: #111;
+}
+
+.col-8 {
+  width: 90%;
+  transition: 0.5s;
+}
+
+
+.col-4:hover {
+  width: inherit;
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 1rem;
+}
+
+
+.col-4:hover + .col-8 {
+  width: inherit;
+  transition: 0.5s;
+}
+
+.col-8 + .col-4:hover{
+  width: inherit;
+  transition: 0.5s;
+}
+
+
+                                                                                                                                
